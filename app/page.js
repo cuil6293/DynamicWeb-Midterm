@@ -1,95 +1,35 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+  const dittoData = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+  const pokeDitto = await dittoData.json();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <div className={styles.home}>
+      <div className={styles.homeWrapper}>
+        <main>
+          <div className={styles.homeTextBox}>
+            <h1>Hello new Trainer! I'm Professor Ditto,</h1>
+            <h1>let me welcome you to-</h1>
+          </div>
+          <img
+            className={styles.homeProf}
+            src={pokeDitto.sprites.front_default}
+            alt="Professor Ditto
+          "
+          />
+          <div className={styles.homeTextBox}>
+            <h2>A wild pokemon has appeared! Catch it!</h2>
+          </div>
+          <Link href={"/quiz"} className={styles.homeBall}>
+            <img
+              src="https://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-HD-Image.png"
+              alt="Pokeball start button"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          </Link>
+        </main>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,142 @@
+[
+  {
+    "questionNum": "num1",
+    "title": "Question 1",
+    "question": "The Pokemon is front of you in that grass, what will you do?",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-grassnaturegreencartoonillustrationgrassfieldlawnlandscapeclipartvector-961524675973yoivn.png",
+    "answers": [
+      {
+        "addScore": 0,
+        "answerText": "I don't know"
+      },
+      {
+        "addScore": 1,
+        "answerText": "Run"
+      },
+      {
+        "addScore": 2,
+        "answerText": "Attack"
+      },
+      {
+        "addScore": 3,
+        "answerText": "Use a PokeBall"
+      },
+      {
+        "addScore": 4,
+        "answerText": "Walk into the grass"
+      }
+    ]
+  },
+  {
+    "questionNum": "num2",
+    "title": "Question 2",
+    "question": "The pokemon came out before you could decide! It's growling at you.",
+    "image": "https://i.pinimg.com/564x/68/f2/96/68f29601bddc0712b39b505770cd25b1.jpg",
+    "answers": [
+      {
+        "addScore": 0,
+        "answerText": "Stare at it"
+      },
+      {
+        "addScore": 1,
+        "answerText": "Run"
+      },
+      {
+        "addScore": 2,
+        "answerText": "Throw a PokeBall at it"
+      },
+      {
+        "addScore": 3,
+        "answerText": "Attack(Barehanded? Brave)"
+      },
+      {
+        "addScore": 4,
+        "answerText": "Professor Ditto?"
+      }
+    ]
+  },
+  {
+    "questionNum": "num3",
+    "title": "Question 3",
+    "question": "The pokemon quickly makes it's way to you before you do anything. It's staring at you",
+    "image": "https://i.pinimg.com/564x/5e/88/4b/5e884b1d6d2e0a3dee6880cbf054de0c.jpg",
+    "answers": [
+      {
+        "addScore": 0,
+        "answerText": "Run!"
+      },
+      {
+        "addScore": 1,
+        "answerText": "Laugh nervously"
+      },
+      {
+        "addScore": 2,
+        "answerText": "Wink"
+      },
+      {
+        "addScore": 3,
+        "answerText": "Throw a PokeBall at it"
+      },
+      {
+        "addScore": 4,
+        "answerText": "Carefully observe it back"
+      }
+    ]
+  },
+  {
+    "questionNum": "num4",
+    "title": "Question 4",
+    "question": "They approach your bag and nuzzle against it. What are you taking out?",
+    "image": "https://static.wikia.nocookie.net/pokemon/images/5/52/Berry_Basket.png",
+    "answers": [
+      {
+        "addScore": 0,
+        "answerText": "I don't care. RUN."
+      },
+      {
+        "addScore": 1,
+        "answerText": "A PokeBall, to assert my dominance"
+      },
+      {
+        "addScore": 2,
+        "answerText": "A rare candy"
+      },
+      {
+        "addScore": 3,
+        "answerText": "A hyper potion"
+      },
+      {
+        "addScore": 4,
+        "answerText": "Some berries"
+      }
+    ]
+  },
+  {
+    "questionNum": "num5",
+    "title": "Question 5",
+    "question": "The pokemon snatches your berries before you can react, guess you have a pokemon now!",
+    "image": "https://preview.redd.it/evil-togepi-from-diamond-and-pearl-episode-where-no-togepi-v0-jhod49vca5ac1.png?auto=webp&s=c8673a8b995ca5de2d0d018bfd9a69ea33d6ad0f",
+    "answers": [
+      {
+        "addScore": 0,
+        "answerText": "RUN!!!"
+      },
+      {
+        "addScore": 1,
+        "answerText": "Cool"
+      },
+      {
+        "addScore": 2,
+        "answerText": "How? What?? When???"
+      },
+      {
+        "addScore": 3,
+        "answerText": "This is a chill pokemon"
+      },
+      {
+        "addScore": 4,
+        "answerText": "No way..."
+      }
+    ]
+  }
+]

@@ -1,165 +1,193 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  min-height: 100vh;
+}
+/* 
+Home Section 
+*/
+
+.home {
+  background-image: url("https://cdn.wikimg.net/en/strategywiki/images/8/82/Pokemon_FRLG_Pallet_Town.png");
+  background-position: center;
+  background-size: contain;
+  font-family: var(--font-pixelfy-sans);
+  width: 100%;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
+.homeWrapper {
   align-items: center;
-  gap: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
 }
 
-.footer img {
-  flex-shrink: 0;
+.homeTextBox {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 20px 80px;
+  text-align: center;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.homeProf {
+  margin: 0 auto;
+  width: 300px;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+.homeBall img {
+  margin-top: 30px;
+  transition: 0.2s;
+  width: 100px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.homeBall img:hover {
+  transform: scale(120%);
+  transition: 0.2s;
+}
+
+/* 
+Quiz Section 
+*/
+
+.quiz {
+  align-items: center;
+  background-image: url("https://static.guidestrats.com/images/02/13609/00-standing-in-the-middle-of-viridian-forest-pokemon-frlg-screenshot.jpg");
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  font-family: var(--font-pixelfy-sans);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.quizGoBack {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 10px;
+  transition: 0.1s;
+}
+
+.quizGoBack :hover {
+  transform: scale(105%);
+  transition: 0.1s;
+}
+
+.quizWrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 980px;
+  padding: 20px 80px;
+  text-align: center;
+}
+
+.quizWrapper img {
+  height: 300px;
+  object-fit: contain;
+  width: 500px;
+}
+
+.quizWrapper p {
+  font-size: 30px;
+}
+
+.quizAnswerWrapper {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.quizAnswerWrapper button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid black;
+  border-radius: 5px;
+  font-family: var(--font-pixelfy-sans);
+  font-size: 20px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.quizAnswerWrapper button:hover {
+  background-color: rgba(127, 210, 43, 0.8);
+  border: 3px solid rgb(255, 237, 39);
+  transform: scale(101%);
+  transition: 0.2s;
+}
+
+.quizAnswerWrapper button:nth-child(5) {
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+
+/*
+Results
+*/
+
+.resultLoading {
+  align-items: center;
+  background-image: url("https://media.tenor.com/MMDa60lTwtIAAAAM/caught-pokemon.gif");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-family: var(--font-pixelfy-sans);
+  font-size: 40px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.resultCard {
+  background-image: url("https://cdn.wikimg.net/en/strategywiki/images/e/e4/Pokemon_FRLG_Six_Island.png?20160917134510");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  font-family: var(--font-pixelfy-sans);
+  justify-content: center;
+  overflow: scroll;
+  text-align: center;
+}
+
+.resultCardWrapper {
+  padding: 20px;
+}
+
+.resultText {
+  border: 5px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  padding: 10px 50px;
+}
+
+.resultImages img {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.resultRestart {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 5px solid black;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.resultRestart :hover {
+  color: red;
+  transform: scale(105%);
+  transition: 0.3s;
 }
